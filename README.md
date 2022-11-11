@@ -52,6 +52,12 @@ Build it on a system with Nix:
 nix build github:determinatesystems/harmonic
 ```
 
+Or on a system with [Nix-Darwin](https://github.com/LnL7/nix-darwin):
+
+```bash
+nix build github:determinatesystems/harmonic --extra-experimental-features nix-command --extra-experimental-features flakes
+```
+
 Then copy the `result/bin/harmonic` to the machine you wish to run it on.
 
 ## Running
